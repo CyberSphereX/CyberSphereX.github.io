@@ -1,0 +1,243 @@
+@keyframes left {
+  0% {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(19%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes moving {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media screen and (width < 1110px) {
+  .mainBanner {
+    width: 100%;
+    height: 100vh;
+    background: #f5f6fa;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+  }
+  .mainBanner .banner_heading {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+  }
+  .mainBanner .banner_heading .text {
+    position: absolute;
+    top: 200px;
+    left: 5vw;
+    height: 350px;
+    width: 50vw;
+    font-size: 60px;
+    font-weight: 500;
+    color: #1B1464;
+  }
+  .mainBanner .banner_heading .text .crud {
+    position: absolute;
+    left: 28%;
+    font-weight: 900;
+    top: 60px;
+    animation: left 1.4s ease-in-out 0.2s 1;
+  }
+  .mainBanner .banner_heading .text .architecture {
+    position: absolute;
+    animation: left 1.4s ease-in-out 0.25s 1;
+    top: 120px;
+  }
+  .mainBanner .banner_heading .text .java {
+    position: absolute;
+    top: 180px;
+    left: 24%;
+    animation: left 1.4s ease-in-out 0.38s 1;
+    font-weight: 900;
+  }
+  .mainBanner .banner_heading img {
+    position: absolute;
+    left: 63vw;
+    width: 200px;
+    top: 210px;
+    transition: all 2s;
+    animation: moving 5s ease 0s infinite;
+  }
+  .mainBanner .allBtn {
+    margin-top: 100px;
+    background-color: #3d34a4;
+    padding: 12px 150px;
+    font-size: 16px;
+    color: white;
+    border: 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 450px;
+    margin-top: 120px;
+    cursor: pointer;
+  }
+  #CRUD {
+    height: 100vh;
+  }
+  #CRUD .input span {
+    overflow: visible;
+  }
+  #CRUD .input span button {
+    left: 83%;
+    z-index: 1000;
+  }
+  #CRUD ul {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #CRUD ul li {
+    width: 100%;
+  }
+  #CRUD ul li div {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  #CRUD ul li div input {
+    font-size: 12px;
+  }
+  .Remove {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+}
+@media screen and (width < 665px) {
+  .mainBanner {
+    width: 100%;
+  }
+  .mainBanner .banner_heading {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainBanner .banner_heading .text {
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainBanner .banner_heading .text .creating {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .mainBanner .banner_heading .text .crud {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .mainBanner .banner_heading .text .architecture {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .mainBanner .banner_heading .text .java {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .mainBanner .banner_heading img {
+    top: 50px;
+    left: 0%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  .mainBanner .allBtn {
+    padding: 12px 110px;
+    top: 550px;
+  }
+  #CRUD {
+    height: 100vh;
+  }
+  #CRUD .input {
+    width: 90%;
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #CRUD .input span {
+    overflow: visible;
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #1B1464;
+    border-radius: 8px;
+    border-right: none;
+    position: relative;
+    left: 0px;
+  }
+  #CRUD .input span button {
+    left: 80%;
+    z-index: 1000;
+    padding: 5px 10px;
+    width: 20%;
+  }
+  #CRUD .input span input {
+    width: 90%;
+  }
+  #CRUD ul {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #CRUD ul li {
+    width: 100%;
+  }
+  #CRUD ul li div {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  #CRUD ul li div button {
+    font-size: 8px;
+    text-align: center;
+    width: 20%;
+    height: 18px;
+  }
+  #CRUD ul li div input {
+    font-size: 15px;
+    width: 90%;
+  }
+}/*# sourceMappingURL=mediaQueries.css.map */
